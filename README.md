@@ -1,14 +1,23 @@
 # Challenger
 Unleash the Code
-
+-----
+````
 Once upon a time there lived a mage
-The maged liked to practice magic through tests made by other mages
-Unfortunately, test grounds are all over the place
-The mage is tired of alternating between might and day
-Shortcuts are never the same everywhere
-He smiles, for he knows...
-He can automate that
+
+Wanting to solve problems made by his pairs
+
+These were scattered across lands and ages
+
+Through times and addresses
+
+Shortcuts are never the same anywhere 
+
+Environments always differ
+
+But he smiles, for he knows... He can automate that
+
 "Ei, zwei, drei!"
+````
 
 # What even ..?
 
