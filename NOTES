@@ -12,8 +12,8 @@ Configuration:
 
 Login:
 	- I initially had a pretty good idea of how this would be achieved, but upon examining the Project Euler page,
-	I realized I had not accounted for something: Captcha
+	I realized I had not accounted for something: Captchas
 	Unfortunatly, my spellbook is devoid of Captcha thwarting incantations, I shall thus refer
 	to the council of all exisiting mages and craft one of my own
-	
+
 	How many more surprises of this kind lie ahead? One can only guess
