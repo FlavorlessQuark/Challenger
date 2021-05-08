@@ -1,0 +1,14 @@
+I have thought about this project not only as a means to fluidify my workflow but also as a form  of exercise. After all, what is a mage withut a few hexes of their own?
+
+First and foremost, I have managed to separate this program into a few more or less self contained smaller files.
+
+As of now I do not yet posses the foresight to see al of the possible challenges that writing this tool may pose
+
+Configuration:
+	- It is hard to tell exactly what piece of information is required to setup and run this tool.
+	For now it saves a directory for each website and whether or not it is a git repositry, such that I may know whether or not to git push once a problem is solved without having to check the directory
+
+Login:
+	- I initially had a pretty good idea of how this would be achieved, but upon examining the Project Euler page, I realized I had not accounted for something: Captcha
+	Unfortunatly, my spellbook is devoid of Captcha thwarting incantations, I shall thus refer to the council of all exisiting mages and craft one of my own
+	How many more surprises of this kind lie ahead? One can only guess
