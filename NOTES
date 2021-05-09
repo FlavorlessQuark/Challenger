@@ -17,3 +17,35 @@ Login:
 	to the council of all exisiting mages and craft one of my own
 
 	How many more surprises of this kind lie ahead? One can only guess
+
+---------------------------
+
+	For their craft surpasses mine.. so far
+
+	This
+	It is like a battle, spread across time and space
+	Spells and hexes flow forth, but none seem to break the barriers established by my predecessors
+	I must bow to their greatness and contemplate their craft with awe
+	This captcha is invisible in the eyes of what  have summoned
+	Nay, I say, no matter. In time , I will prevail
+
+	Gone are all the hopes,
+	For hours I fought against this login page. Alas! Nothing will do.
+	It is not a matter of strategy for the one I have crafted seems reasonable, but a matter of execution
+	How could I, a mere novice in the arcane art of web scraping, could hope to defeat the masters?
+
+	But I have one more trick up my sleeve, come forth... cookies..
+
+------------------------
+
+
+IMPORTANT:
+	- As this requires mutltiple modules to function properly, it is imperative to, once the program is completed, add
+	the logic to check whether these dependencies are present and to install them if they are not; So far, the following spellbooks have been used
+	BeautifulSoup (bs4)
+	Pillow
+	Tesseract (pytesseract) - Insalling pytesseract also installs Pillow
+	xml
+	selenium
+	pipenv ?
+	phantomjs
