@@ -6,15 +6,14 @@ from srcs import setup
 compile_lines = {
 					".c": "gcc -g main.c && ./a.out",
 					".py":"python3 main.py"
-
 }
 
 commands = {
 				"end":"save()",
 				"test":"test()",
-				"start":"start(answer)",
-				"pause":"pause()",
-				"submit":"submit()"
+				"start":"start(),
+				"skip":"skip()",
+				"submit":"submit(answer)"
 }
 
 def start(answer):
@@ -43,13 +42,15 @@ with open ("challenger.config") as f:
 
 
 print(">> Welcome user")
-print(">> Exercises are available from the following: Leetcode (leetcode) | Advent of Code (aoc) | Project Euler (euler)")
+print(">> Exercises are available from the following: Project Euler (euler)")
 
 # Setup the workspace and add information necessary to save files
+info = {"id":0, "start_time":0, "mode":0}
 
 while True:
 	answer = input().split(" ")
 	if answer[0] not in commands:
-		print(">? Invalid command: " + answer[0] + "| Available commands are : start, pause, finish")
+		print(">? Invalid command: " + answer[0] + "| Available commands are : " + commabds.keys())
 	else:
 		eval(commands[answer[0]])
+		break
