@@ -1,7 +1,9 @@
 import os
 import re
-from srcs import setup
-
+import bin.code_sessions as cs
+import bin.setup
+import bin.commands as cmd
+import json
 
 compile_lines = {
 					".c": "gcc -g main.c && ./a.out",
@@ -9,48 +11,29 @@ compile_lines = {
 }
 
 commands = {
-				"end":"save()",
-				"test":"test()",
-				"start":"start(),
-				"skip":"skip()",
-				"submit":"submit(answer)"
+				"end":cmd.stop,
+				"start":cmd.start,
+				"next":cmd.get_next,
+				"submit":cmd.submit
 }
 
-def start(answer):
-	match = re.match(r'^start (leetcode|aoc|euler) (\..+)$', answer)
-	if match and config[match.groups()[0]]:
-		print("workspace")
-		setup.setup_workspace(match.groups())
-		break
-	elif match:
-		print("setup all")
-		setup.setup_website(match.groups()[0])
-		setup.setup_workspace(match.groups())
-		break
-	else:
-		print("Invalid optiions. Usage: start website language_extension")
+sessions  = {
+				"euler": cs.euler_session()
+}
 
 
 # ----------------------------------------------------------------#
-# Check if config file exist, else run setup
-if not os.path.dirname("challenger.config"):
-	with open("challenger.config", 'w+') as f:
-			f.write("leetcode:\naoc:\neuler:\n")
-
-with open ("challenger.config") as f:
-	config = {line.split(":")[0]:line.strip().split(",")[1:] for line in  f }
-
 
 print(">> Welcome user")
 print(">> Exercises are available from the following: Project Euler (euler)")
 
 # Setup the workspace and add information necessary to save files
-info = {"id":0, "start_time":0, "mode":0}
-
+info = {"id":1, "start_time":0, "mode":0}
+session = sessions["euler"]
+session.data["Answer"] = False
 while True:
 	answer = input().split(" ")
 	if answer[0] not in commands:
-		print(">? Invalid command: " + answer[0] + "| Available commands are : " + commabds.keys())
+		print(">? Invalid command: " + answer[0] + "| Available commands are : " + str(list(commands.keys())))
 	else:
-		eval(commands[answer[0]])
-		break
+		commands[answer[0]](session)

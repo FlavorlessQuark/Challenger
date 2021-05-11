@@ -61,12 +61,19 @@ Login:
 	There were 3 whilst I thought there were only one..
 	I must seek to observe more with these two eyes of mine, sometimes the solution hides in plain sight
 
+-------------------------
+
+	And thus it was finished
+	There are still minor bugs to fix, but the core is here and working : getting inut, submititng, checking etc...
+	I have also added a timelog ...
 
 
 IMPORTANT:
 	- As this requires mutltiple modules to function properly, it is imperative to, once the program is completed, add
 	the logic to check whether these dependencies are present and to install them if they are not; So far, the following spellbooks have been used
 	BeautifulSoup (bs4)
+	json
+
 	Pillow
 	Tesseract (pytesseract) - Insalling pytesseract also installs Pillow
 	xml
