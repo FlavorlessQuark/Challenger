@@ -32,12 +32,17 @@ This will be a longer and more complete tool than ones i've previousy done, and 
 When ran for the first time, you will need to supply which directory you want your files saved to as well as a Cookie that will be used to log into Project Euler
 
 Commands :
+
+
 ```
 start [extension] : Starts from the last solved problem withn $extension as the file extension used
 next			  : Skips the current problem if unsolved or starts the next problem if solved. Work will be saved
 stop			  : Saves your work and ends the program
 submit			  : Submits your answer to project Euler and returns whateher it is correct or not
+
 ```
+**BEWARE** Saved work is automatically pushed to github if the specified directory is a git repo. As of now there are no options to disable this except editing the config file
+
 
 # TODO
 
