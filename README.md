@@ -10,7 +10,7 @@ These were scattered across lands and ages
 
 Through times and addresses
 
-Shortcuts are never the same anywhere 
+Shortcuts are never the same anywhere
 
 Environments always differ
 
@@ -27,14 +27,18 @@ Challenger is a command line tool that lets you easily solve coding challenges f
 
 This will be a longer and more complete tool than ones i've previousy done, and it is likely to take weeks if not months to complete.
 
-## Specification
+## Usage
 
-- User may choose which website to pull problems from or can be given random questions from a random website.
-- User may choose the language
-- Log in to the respective website using github (eventually more ways will be suported)
-- Create the necessary files (a file for the prompt, a file to write the code to and a potential additional file for input -as it appears in advent of code-)
-- Send the problems / solutions to the websites for validation and notify if it passes or fails
-- Time the user and keep track of problem comletion time in a file
-- Save the problem solution and log in the apprpriate directory
+When ran for the first time, you will need to supply which directory you want your files saved to as well as a Cookie that will be used to log into Project Euler
 
-- When set up, challenger should take 3 different directories to which it should save the data 
+Commands :
+```
+start [extension] : Starts from the last solved problem withn $extension as the file extension used
+next			  : Skips the current problem if unsolved or starts the next problem if solved. Work will be saved
+stop			  : Saves your work and ends the program
+submit			  : Submits your answer to project Euler and returns whateher it is correct or not
+```
+
+# TODO
+
+Test it more thorougly, add the option to redo skipped problem | Do random problems
