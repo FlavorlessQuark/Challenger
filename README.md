@@ -21,7 +21,7 @@ But he smiles, for he knows... He can automate that
 
 # What even ..?
 
-Challenger is a command line tool that lets you easily solve coding challenges from leetcode, advent of code and the euler project, all from your favorite text editor.
+Challenger is a command line tool that lets you easily solve coding problems from different places - Currently getting problems from : Project Euler
 
 ## ETC
 
@@ -47,3 +47,8 @@ submit			  : Submits your answer to project Euler and returns whateher it is cor
 # TODO
 
 Test it more thorougly, add the option to redo skipped problem | Do random problems
+
+Add AoC support
+
+Add w3Ressources (https://www.w3resource.com/python-exercises/) Python / C
+
